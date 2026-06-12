@@ -58,6 +58,20 @@ Imagen hello-world ejecutada exitosamente.
 
 <img width="921" height="326" alt="image" src="https://github.com/user-attachments/assets/877769c2-b23a-4079-ae61-14cf9ba0ad25" />
 
+## Búsqueda de imágenes Oracle
+
+Comando ejecutado:
+
+```bash
+docker search oracle```
+
+Resultado:
+
+Se verificó la disponibilidad de imágenes Oracle en Docker Hub y se seleccionó Oracle XE 21c para el laboratorio.
+
+<img width="996" height="565" alt="image" src="https://github.com/user-attachments/assets/d15b56c8-6ab2-4163-b4c5-7cd8b3ad4186" />
+
+
 
 
 
