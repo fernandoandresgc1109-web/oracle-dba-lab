@@ -121,6 +121,7 @@ sudo groupadd dba
 
 chmod 600 datos1.txt
 chmod 755 datos2.txt
+```
 
 <img width="921" height="578" alt="image" src="https://github.com/user-attachments/assets/85311c21-f954-41eb-a01b-4b61925b066f" />
 
