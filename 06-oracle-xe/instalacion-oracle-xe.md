@@ -18,3 +18,7 @@ sudo systemctl status docker
 
 <img width="1562" height="766" alt="image" src="https://github.com/user-attachments/assets/3ebc6cdc-03ed-4b0d-8a28-b6244d69799a" />
 
+
+<img width="960" height="222" alt="image" src="https://github.com/user-attachments/assets/b70ec734-6302-46ba-941b-dade9b21705a" />
+<img width="827" height="162" alt="image" src="https://github.com/user-attachments/assets/03deca63-a855-49ae-b71b-df53a19cf5b0" />
+
