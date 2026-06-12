@@ -34,6 +34,29 @@ docker run hello-world
 <img width="921" height="262" alt="image" src="https://github.com/user-attachments/assets/d02c3e12-2541-4ed4-bf29-c5b8b7835438" />
 <img width="921" height="618" alt="image" src="https://github.com/user-attachments/assets/94a1a776-a1f6-4ddf-b02b-d9e4d7126d7c" />
 
+# Oracle Database XE
+
+## Objetivo
+
+Instalar Oracle Database Express Edition utilizando Docker para practicar administración de bases de datos Oracle.
+
+## Verificaciones previas
+
+Comandos ejecutados:
+
+```bash
+docker --version
+docker info | head -20
+Resultado:
+
+Docker 29.1.3 instalado.
+Motor Docker funcionando correctamente.
+Comunicación entre cliente y servidor validada.
+Imagen hello-world ejecutada exitosamente.
+```
+
+
+<img width="921" height="326" alt="image" src="https://github.com/user-attachments/assets/877769c2-b23a-4079-ae61-14cf9ba0ad25" />
 
 
 
