@@ -72,6 +72,9 @@ Se verificó la disponibilidad de imágenes Oracle en Docker Hub y se seleccion�
 
 <img width="996" height="565" alt="image" src="https://github.com/user-attachments/assets/d15b56c8-6ab2-4163-b4c5-7cd8b3ad4186" />
 
+<img width="805" height="137" alt="image" src="https://github.com/user-attachments/assets/bbfca0a9-8825-45d3-b201-bd6dfcd24dff" />
+
+
 
 
 
