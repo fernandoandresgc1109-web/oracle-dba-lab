@@ -63,7 +63,8 @@ Imagen hello-world ejecutada exitosamente.
 Comando ejecutado:
 
 ```bash
-docker search oracle```
+docker search oracle
+```
 
 Resultado:
 
