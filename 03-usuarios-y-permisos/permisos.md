@@ -80,3 +80,29 @@ sudo chown usuario_prueba:dba respaldo.bkp
 Se creó un usuario de prueba, se asignó a un grupo administrativo y se modificó la propiedad de un archivo mediante chown.
 <img width="805" height="728" alt="image" src="https://github.com/user-attachments/assets/9164ff27-1be1-4556-b97b-e2ae867335d3" />
 
+# Organización del laboratorio
+
+Se creó la estructura base para el laboratorio Oracle DBA.
+
+## Comandos ejecutados
+
+```bash
+mkdir ~/oracle_lab
+cd ~/oracle_lab
+
+mkdir backups
+mkdir scripts
+mkdir software
+
+sudo apt install tree -y
+
+.
+├── backups
+├── scripts
+└── software
+
+4 directories, 0 files
+<img width="1587" height="816" alt="image" src="https://github.com/user-attachments/assets/44337241-a8f7-4451-aff2-10f444365971" />
+
+
+
