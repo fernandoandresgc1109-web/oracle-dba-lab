@@ -24,7 +24,9 @@ Prepararme para un cargo de DBA Junior mediante prácticas reales con:
 - RAM: 8 GB
 - CPU: 2 núcleos
 - Disco: 80 GB
-- Red: NAT
+- Red: Adaptador puente
+IP actual: 192.168.1.178
+Acceso remoto: MobaXterm por SSH
 
 ## Avance
 
@@ -33,6 +35,10 @@ Prepararme para un cargo de DBA Junior mediante prácticas reales con:
 - [x] Configurar OpenSSH
 - [x] Actualizar sistema
 - [x] Practicar comandos básicos de Linux
+- [x] Administrar usuarios y permisos Linux
+- [x] Monitorear servicios y procesos
+- [x] Conectarse por SSH desde MobaXterm
+- [x] Crear estructura del laboratorio Oracle
 - [ ] Instalar Oracle Database XE
 - [ ] Crear usuarios Oracle
 - [ ] Realizar backups
