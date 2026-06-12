@@ -12,7 +12,16 @@ sudo apt install docker.io -y
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo systemctl status docker
+
+# Verificación de Docker
+
+Comando ejecutado:
+
+```bash
+docker ps
 ```
+
+docker run hello-world
 
 ### Evidencia
 
@@ -21,4 +30,6 @@ sudo systemctl status docker
 
 <img width="960" height="222" alt="image" src="https://github.com/user-attachments/assets/b70ec734-6302-46ba-941b-dade9b21705a" />
 <img width="827" height="162" alt="image" src="https://github.com/user-attachments/assets/03deca63-a855-49ae-b71b-df53a19cf5b0" />
+<img width="932" height="572" alt="image" src="https://github.com/user-attachments/assets/4959a94d-bce3-4f38-a4e1-1277740b2402" />
+
 
