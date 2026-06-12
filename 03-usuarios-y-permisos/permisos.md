@@ -123,9 +123,13 @@ chmod 600 datos1.txt
 chmod 755 datos2.txt
 
 <img width="921" height="578" alt="image" src="https://github.com/user-attachments/assets/85311c21-f954-41eb-a01b-4b61925b066f" />
+
 <img width="871" height="119" alt="image" src="https://github.com/user-attachments/assets/4f28163c-321e-43fd-b565-0c124759b7bb" />
+
 <img width="878" height="406" alt="image" src="https://github.com/user-attachments/assets/7e525081-5b24-4709-a469-2f26a164c5bc" />
+
 <img width="921" height="171" alt="image" src="https://github.com/user-attachments/assets/161cdfc7-f8ec-4e1b-b016-ec66e65af6f2" />
+
 <img width="921" height="423" alt="image" src="https://github.com/user-attachments/assets/b763d24a-05d5-4b55-b68b-2cb6adf13011" />
 
 
