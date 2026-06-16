@@ -86,5 +86,20 @@ WHERE grantee = 'ROL_DESARROLLADOR';
 El rol `ROL_DESARROLLADOR` recibió correctamente los privilegios necesarios para conectarse a la base de datos y crear tablas y vistas.
 <img width="921" height="408" alt="image" src="https://github.com/user-attachments/assets/10c2a010-3a6a-44c1-ba55-0a44ce4b1d67" />
 
+## Asignación de rol a usuario
+
+Después de configurar el rol `ROL_DESARROLLADOR`, este fue asignado al usuario `DBA_JUNIOR`.
+
+### Comando utilizado
+
+```sql
+GRANT ROL_DESARROLLADOR TO DBA_JUNIOR;
+```
+SELECT grantee, granted_role
+FROM dba_role_privs
+WHERE grantee = 'DBA_JUNIOR';
+
+<img width="921" height="391" alt="image" src="https://github.com/user-attachments/assets/3bb19db2-ddef-4efa-8d84-bc4f8ed113eb" />
+
 
 
