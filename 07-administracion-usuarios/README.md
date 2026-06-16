@@ -20,5 +20,6 @@ FROM dba_users
 WHERE username = 'DBA_JUNIOR';
 
 Evidencia de bloqueo y desbloqueo de usuario:
+```
 
 <img width="921" height="791" alt="image" src="https://github.com/user-attachments/assets/2ecb03a1-59d0-47b4-a67c-9bf9ba2d6440" />
