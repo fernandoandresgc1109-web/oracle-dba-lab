@@ -39,7 +39,7 @@ Acceso remoto: MobaXterm por SSH
 - [x] Monitorear servicios y procesos
 - [x] Conectarse por SSH desde MobaXterm
 - [x] Crear estructura del laboratorio Oracle
-- [ ] Instalar Oracle Database XE
-- [ ] Crear usuarios Oracle
+- [x] Instalar Oracle Database XE
+- [x] Crear usuarios Oracle
 - [ ] Realizar backups
 - [ ] Realizar recuperación
