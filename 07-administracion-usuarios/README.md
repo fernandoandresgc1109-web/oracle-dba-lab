@@ -61,4 +61,30 @@ El rol fue creado correctamente y quedó disponible para asignar permisos y ser 
 
 <img width="921" height="221" alt="image" src="https://github.com/user-attachments/assets/cda39987-0558-4bc0-b8ac-d003b8ddcf53" />
 
+## Asignación de privilegios a un rol
+
+Después de crear el rol `ROL_DESARROLLADOR`, se asignaron privilegios para permitir la conexión a la base de datos y la creación de objetos.
+
+### Comandos utilizados
+
+```sql
+GRANT CREATE SESSION TO ROL_DESARROLLADOR;
+GRANT CREATE TABLE TO ROL_DESARROLLADOR;
+GRANT CREATE VIEW TO ROL_DESARROLLADOR;
+```
+
+### Verificación
+
+```sql
+SELECT grantee, privilege
+FROM dba_sys_privs
+WHERE grantee = 'ROL_DESARROLLADOR';
+```
+
+### Resultado
+
+El rol `ROL_DESARROLLADOR` recibió correctamente los privilegios necesarios para conectarse a la base de datos y crear tablas y vistas.
+<img width="921" height="408" alt="image" src="https://github.com/user-attachments/assets/10c2a010-3a6a-44c1-ba55-0a44ce4b1d67" />
+
+
 
