@@ -101,5 +101,34 @@ WHERE grantee = 'DBA_JUNIOR';
 
 <img width="921" height="391" alt="image" src="https://github.com/user-attachments/assets/3bb19db2-ddef-4efa-8d84-bc4f8ed113eb" />
 
+## Creación de un segundo usuario
+
+Con el objetivo de simular un entorno multiusuario, se creó la cuenta `ANALISTA` dentro de la base de datos Oracle.
+
+### Comandos utilizados
+
+```sql
+CREATE USER ANALISTA
+IDENTIFIED BY Oracle123;
+
+GRANT CREATE SESSION TO ANALISTA;
+
+ALTER USER ANALISTA
+QUOTA UNLIMITED ON USERS;
+```
+
+### Verificación
+
+```sql
+SELECT username, account_status
+FROM dba_users
+WHERE username = 'ANALISTA';
+```
+
+### Resultado
+
+El usuario `ANALISTA` fue creado correctamente, recibió permisos para conectarse a la base de datos y se le asignó espacio en el tablespace USERS para la creación de objetos.
+
+<img width="897" height="432" alt="image" src="https://github.com/user-attachments/assets/b838036a-270b-4f5a-b7ce-88f848356928" />
 
 
