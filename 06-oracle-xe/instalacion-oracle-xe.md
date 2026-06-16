@@ -82,6 +82,51 @@ Se verificó la disponibilidad de imágenes Oracle en Docker Hub y se seleccion�
 <img width="921" height="460" alt="image" src="https://github.com/user-attachments/assets/8d9c0da6-e54e-41a7-809a-b37f64e99d57" />
 
 
+Creación del usuario DBA_JUNIOR
+
+CREATE USER DBA_JUNIOR IDENTIFIED BY Oracle123;
+GRANT CONNECT, RESOURCE TO DBA_JUNIOR;
+
+Verificación:
+
+SELECT USERNAME
+FROM DBA_USERS
+WHERE USERNAME='DBA_JUNIOR';
+Resultado:
+DBA_JUNIOR
+
+docker exec -it oracle-xe sqlplus dba_junior/Oracle123@XEPDB1
+
+CREATE TABLE empleados (
+    id NUMBER,
+    nombre VARCHAR2(50)
+);
+Table created.
+
+INSERT INTO empleados VALUES (1,'Andres');
+
+Se ingresó nuevamente como SYSDBA y se otorgó cuota sobre el tablespace USERS:
+ALTER USER DBA_JUNIOR
+QUOTA UNLIMITED ON USERS;
+User altered.
+
+INSERT INTO empleados VALUES (1,'Andres');
+COMMIT;
+SELECT * FROM empleados;
+ID  NOMBRE
+1   Andres
+
+<img width="921" height="585" alt="image" src="https://github.com/user-attachments/assets/a8b91830-84d6-41e7-a52d-7279d7d50b52" />
+<img width="921" height="838" alt="image" src="https://github.com/user-attachments/assets/d15edac7-0343-4ea3-9ffd-5d17a7b351e9" />
+<img width="921" height="765" alt="image" src="https://github.com/user-attachments/assets/d4b44c62-3db6-47d7-ba03-03fa609e3305" />
+<img width="921" height="809" alt="image" src="https://github.com/user-attachments/assets/5e1b0ee9-40b6-4a77-8f71-2da653b410ff" />
+<img width="864" height="426" alt="image" src="https://github.com/user-attachments/assets/da7816eb-93c8-4461-9bcc-c1c9df03d8d5" />
+
+
+
+
+
+
 
 
 
