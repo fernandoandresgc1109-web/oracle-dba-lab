@@ -69,5 +69,42 @@ El tablespace fue creado correctamente con crecimiento automático habilitado pa
 <img width="669" height="231" alt="image" src="https://github.com/user-attachments/assets/7f30692b-5589-45c0-9bc4-af5f7e395155" />
 <img width="1386" height="87" alt="image" src="https://github.com/user-attachments/assets/4726294c-cf30-4388-a76e-d4d87ace9d87" />
 
+## Verificación del tablespace creado
+
+Después de crear el tablespace `TS_DESARROLLO`, se verificó su existencia dentro de la base de datos.
+
+### Comando utilizado
+
+```sql
+SELECT tablespace_name,
+       status,
+       contents
+FROM dba_tablespaces
+WHERE tablespace_name = 'TS_DESARROLLO';
+```
+
+### Resultado
+
+El tablespace quedó registrado correctamente y disponible para almacenar objetos de usuarios.
+
+## Verificación del datafile asociado
+
+Se consultó el archivo físico asociado al tablespace creado.
+
+### Comando utilizado
+
+```sql
+SELECT tablespace_name,
+       file_name,
+       bytes/1024/1024 AS MB
+FROM dba_data_files
+WHERE tablespace_name = 'TS_DESARROLLO';
+```
+
+### Resultado
+
+Se confirmó la creación del archivo físico `ts_desarrollo01.dbf` con un tamaño inicial de 100 MB y crecimiento automático habilitado.
+
+<img width="921" height="587" alt="image" src="https://github.com/user-attachments/assets/12b57292-0b93-4428-9f77-111de346d001" />
 
 
