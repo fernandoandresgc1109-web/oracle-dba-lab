@@ -107,4 +107,48 @@ Se confirmó la creación del archivo físico `ts_desarrollo01.dbf` con un tama�
 
 <img width="921" height="587" alt="image" src="https://github.com/user-attachments/assets/12b57292-0b93-4428-9f77-111de346d001" />
 
+## Asignación de tablespace a usuario
+
+Se configuró el tablespace `TS_DESARROLLO` como tablespace predeterminado para el usuario `ANALISTA`.
+
+### Problema encontrado
+
+Inicialmente se presentó el error:
+
+```sql
+ORA-00959: tablespace 'TS_DESARROLLO' does not exist
+```
+
+La causa fue que el usuario y el tablespace se encontraban en contenedores diferentes dentro de la arquitectura multitenant de Oracle.
+
+### Solución aplicada
+
+Se verificó el contenedor activo, se creó el tablespace en la PDB correspondiente (`XEPDB1`) y posteriormente se realizó la asignación al usuario.
+
+### Comando utilizado
+
+```sql
+ALTER USER ANALISTA
+DEFAULT TABLESPACE TS_DESARROLLO;
+```
+
+### Verificación
+
+```sql
+SELECT username,
+       default_tablespace
+FROM dba_users
+WHERE username = 'ANALISTA';
+```
+
+### Resultado
+
+El usuario `ANALISTA` quedó configurado correctamente para utilizar `TS_DESARROLLO` como tablespace predeterminado para la creación de sus objetos.
+
+
+<img width="672" height="702" alt="image" src="https://github.com/user-attachments/assets/0cec4f43-7e9e-42b9-a3f9-ecc24d0b05b3" />
+<img width="642" height="550" alt="image" src="https://github.com/user-attachments/assets/e5df07ef-4176-4b55-b9a8-49bc05f74b90" />
+<img width="652" height="616" alt="image" src="https://github.com/user-attachments/assets/afbb725b-7c93-405d-9f30-fa25382cdf91" />
+
+
 
