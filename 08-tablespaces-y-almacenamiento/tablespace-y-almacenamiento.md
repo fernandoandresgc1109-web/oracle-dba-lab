@@ -43,3 +43,31 @@ Se identificaron los archivos físicos de almacenamiento utilizados por la base 
 ```
 
 <img width="900" height="472" alt="image" src="https://github.com/user-attachments/assets/058f0431-85ab-4a8e-bf51-c7e1b79fd930" />
+
+## Creación de un tablespace personalizado
+
+Se creó el tablespace `TS_DESARROLLO` para almacenar objetos de usuarios y aplicaciones de forma independiente a los tablespaces predeterminados del sistema.
+
+### Comando utilizado
+
+```sql
+CREATE TABLESPACE TS_DESARROLLO
+DATAFILE '/opt/oracle/oradata/XE/ts_desarrollo01.dbf'
+SIZE 100M
+AUTOEXTEND ON
+NEXT 10M
+MAXSIZE 500M;
+```
+
+### Resultado
+
+El tablespace fue creado correctamente con crecimiento automático habilitado para facilitar la administración del almacenamiento.
+
+```
+```
+
+<img width="669" height="231" alt="image" src="https://github.com/user-attachments/assets/7f30692b-5589-45c0-9bc4-af5f7e395155" />
+<img width="1386" height="87" alt="image" src="https://github.com/user-attachments/assets/4726294c-cf30-4388-a76e-d4d87ace9d87" />
+
+
+
