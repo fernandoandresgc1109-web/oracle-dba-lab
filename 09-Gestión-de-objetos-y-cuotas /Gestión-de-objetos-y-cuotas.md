@@ -21,6 +21,7 @@ GRANT CREATE TABLE TO ANALISTA;
 
 ALTER USER ANALISTA 
 QUOTA UNLIMITED ON TS_DESARROLLO;
+```
 
 <img width="587" height="551" alt="image" src="https://github.com/user-attachments/assets/2220d8cc-5137-4a7f-baa4-6d9f66e6c79a" />
 <img width="927" height="495" alt="image" src="https://github.com/user-attachments/assets/68985f31-8b0d-4e48-aeaf-9908dc819cac" />
