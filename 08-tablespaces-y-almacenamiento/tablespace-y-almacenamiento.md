@@ -150,5 +150,37 @@ El usuario `ANALISTA` quedó configurado correctamente para utilizar `TS_DESARRO
 <img width="642" height="550" alt="image" src="https://github.com/user-attachments/assets/e5df07ef-4176-4b55-b9a8-49bc05f74b90" />
 <img width="652" height="616" alt="image" src="https://github.com/user-attachments/assets/afbb725b-7c93-405d-9f30-fa25382cdf91" />
 
+## Monitoreo de espacio en tablespaces
+
+Se realizaron consultas para verificar la capacidad y el espacio disponible de los tablespaces configurados en Oracle.
+
+### Consulta de tamaño
+
+```sql
+SELECT tablespace_name,
+       ROUND(SUM(bytes)/1024/1024,2) AS MB
+FROM dba_data_files
+GROUP BY tablespace_name
+ORDER BY tablespace_name;
+```
+
+### Consulta de espacio libre
+
+```sql
+SELECT tablespace_name,
+       ROUND(SUM(bytes)/1024/1024,2) AS MB_LIBRES
+FROM dba_free_space
+GROUP BY tablespace_name
+ORDER BY tablespace_name;
+```
+
+### Resultado
+
+Las consultas permitieron identificar el tamaño asignado y el espacio libre disponible en cada tablespace, información fundamental para la administración y planificación del almacenamiento de la base de datos.
+
+<img width="596" height="340" alt="image" src="https://github.com/user-attachments/assets/a6749302-6c1e-4918-8537-c8ba23248beb" />
+<img width="683" height="334" alt="image" src="https://github.com/user-attachments/assets/2a978df1-414c-4ab5-bb09-4a459fa18fa2" />
+<img width="608" height="258" alt="image" src="https://github.com/user-attachments/assets/2d9d89db-7363-49d6-a417-07c476901803" />
+
 
 
